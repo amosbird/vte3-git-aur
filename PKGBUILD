@@ -5,7 +5,7 @@
 _realname=vte3
 pkgname=$_realname-git
 
-pkgver=0.59.0.4583.f62faf93
+pkgver=99999.0.59.0.4583.f62faf93
 pkgrel=1
 pkgdesc="Virtual Terminal Emulator widget for use with GTK3"
 arch=('i686' 'x86_64')
@@ -33,7 +33,7 @@ pkgver() {
   version=$(grep "\#define VERSION " builddir/config.h | sed 's/\#define VERSION //' | sed 's/\"//g')
   hash=$(git log --pretty=format:'%h' -n 1)
   revision=$(git rev-list --count HEAD)
-  echo $version.$revision.$hash
+  echo 99999.$version.$revision.$hash
 }
 
 build() {
