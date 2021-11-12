@@ -15,7 +15,7 @@ makedepends=('intltool' 'gobject-introspection' 'vala' 'gtk-doc' 'gperf' 'meson>
 url="https://github.com/amosbird/libvte"
 depends=('gtk3' 'vte-common' 'glibc' 'pcre2')
 
-provides=(vte3=$pkgver vte-common)
+provides=(vte3=$pkgver vte-common libvte-2.91.so)
 conflicts=($_realname vte-common)
 
 source=("git+https://github.com/amosbird/libvte")

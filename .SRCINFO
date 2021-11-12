@@ -18,6 +18,7 @@ pkgbase = vte3-git
 	depends = pcre2
 	provides = vte3=99999.0.59.0.4583.f62faf93
 	provides = vte-common
+	provides = libvte-2.91.so
 	conflicts = vte3
 	conflicts = vte-common
 	options = !emptydirs
@@ -25,4 +26,3 @@ pkgbase = vte3-git
 	md5sums = SKIP
 
 pkgname = vte3-git
-
